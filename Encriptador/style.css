@@ -1,0 +1,151 @@
+body{
+    background-color: #a9afc4;
+}
+h1{
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    color: rgb(14, 10, 250);
+}
+
+.logo-img{
+    margin-top: 30px;
+    margin-left: 30px;
+}
+
+.container{
+
+    display: flex;
+    margin: 30px;
+    gap: 40px;
+}
+.cont-text{
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+   
+}
+.text{
+    
+    resize: none;
+    background-color:#0a387100;
+    border-color: #0a387100;
+    width: 100%;
+    height: 70%;
+    
+
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 150%;
+
+    color: rgb(27, 27, 155);
+}
+.text-low{
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 120%;
+    /* or 29px */
+    color: rgb(63, 55, 55);
+    text-align: center;
+    margin-top: 45px;
+}
+.rectangulo{
+    display:block;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    overflow: hidden;
+    background-color: rgb(221, 203, 203);
+    width: 100%;
+    text-align: center;
+
+
+    /*Shadow*/
+    box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
+    border-radius: 32px;
+}
+.img-rect{
+    margin-top: 100px;
+}
+
+#consejo{
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    color: #495057;
+    grid-area: head;
+}
+.cont-button-text{
+    display: grid;
+    grid-template-areas: "head head"
+                         "encriptar desencriptar";
+    gap: 10px;
+    
+}
+
+
+.row{
+    gap: 8px;
+    padding: 24px;
+}
+.button-en{
+    background-color:rgba(0, 0, 139, 0.712);
+    grid-area: encriptar;
+}
+
+.button-en:hover{
+    background-color: rgba(1, 1, 41, 0.836);
+    transform: scale(1.1);
+    transition: 500ms;
+}
+
+.button-de{
+    background-color: #D8DFE8;
+    grid-area: desencriptar;
+}
+
+.button-de:hover{
+    background-color: #8b8f94;
+    transform: scale(1.1);
+    transition: 500ms;
+}
+
+.button-de , .button-en, .button-copy{
+    box-sizing: border-box;
+    width: 300px;
+    height: 50px;
+    border: 1px solid #0A3871;
+    border-radius: 24px;
+    
+}
+
+.text-encriptado{
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 22px;
+    color: rgb(27, 27, 155);
+    
+}
+
+
+@media(max-width: 900px){
+    .container{
+        flex-direction: column;
+    }
+}
+
+@media(max-width: 600px){
+    .container{
+        flex-direction: column;
+    }
+
+    .cont-button-text{
+        grid-template-areas: "head"
+                            "encriptar" 
+                            "desencriptar";
+    }
+}
